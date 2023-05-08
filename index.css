@@ -117,9 +117,12 @@ main {
     display: flex;
 }
 
-
-#div2 {
-    background-color: #ccf2cc;
+.hamburger {
+    display: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-image: url("assets/icons/icons8-menu-50.png");
 }
 
 .footer {
@@ -242,6 +245,7 @@ main {
         padding-bottom: 20px;
         transition: 0.2s ease-in-out;
     }
+
     .right-section {
         background-size: contain;
     }
@@ -250,28 +254,91 @@ main {
         font-size: 48px;
         margin-bottom: 15px;
     }
+
     .icon-container > h3 {
         font: 18px roboto;
     }
+
     a {
         font-size: 22px;
     }
-    .description{
+
+    .description {
         display: none;
     }
-    .check-out{
+
+    .check-out {
         font-size: 20px;
     }
-    .icons{
+
+    .icons {
         position: absolute;
         top: 100px;
         left: 0;
     }
-    .footer-text{
-        font-size: 20px;
 
+    .footer-text {
+        font-size: 20px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .navbar > ul > li {
+        padding-right: 3em;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .right-section {
+        background-size: contain;
+    }
+
+    .item {
+        font-size: 34px;
+        margin-bottom: 15px;
+    }
+
+    .icon-container > h3 {
+        font: 18px roboto;
+    }
+
+    a {
+        font-size: 22px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .check-out {
+        font-size: 20px;
+    }
+
+    .icons {
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .icons {
+        width: 40%;
+    }
+
+    .social > li > a > img {
+        width: 30px;
+    }
+
+    .social > li {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+}
+
 /*tab*/
 @media screen and (max-width: 994px) {
     .navbar > ul > li {
@@ -280,49 +347,58 @@ main {
         padding-bottom: 20px;
         transition: 0.2s ease-in-out;
     }
+
     .right-section {
         background-size: contain;
     }
-    .footer-text{
+
+    .footer-text {
         font-size: 18px;
     }
+
     .item {
         font-size: 32px;
         margin-bottom: 15px;
     }
+
     .icon-container > h3 {
         font: 18px roboto;
     }
+
     a {
         font-size: 22px;
     }
-    .description{
+
+    .description {
         display: none;
     }
-    .check-out{
+
+    .check-out {
         font-size: 20px;
     }
-    .icons{
+
+    .icons {
         position: absolute;
         top: 100px;
         left: 0;
     }
 }
+
 /*tab*/
 @media screen and (max-width: 768px) {
-    .navbar > ul > li {
-        padding-right: 0;
-        padding-left: 10px;
-        padding-bottom: 20px;
-        transition: 0.2s ease-in-out;
+    .navbar > ul {
+        display: none;
     }
+
     a {
         font-size: 26px;
     }
-    .footer-text{
+
+    .footer-text {
         font-size: 18px;
     }
-    .description{
+
+    .description {
         display: none;
     }
 
@@ -346,7 +422,64 @@ main {
     .item {
         font-size: 32px;
     }
-    .item-text{
-        flex-shrink: 0; /* Prevent the h1 element from shrinking */
+
+    .item-text {
+        flex-shrink: 0;
     }
+
+    .nav-links {
+        width: 60%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .hamburger {
+        display: block;
+        order: 3; /* Add this line */
+        margin-left: auto; /* Add this line */
+    }
+
+    .nav-links,
+    .nav-links.active {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 425px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-section {
+        display: flex;
+        width: 100vw;
+        height: 690px;
+        background-image: url("assets/images/img.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .left-section {
+
+        width: 100vw;
+        border: 1px solid crimson;
+    }
+
+    .item {
+        margin: 0 0 0 20px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
 }

@@ -163,6 +163,7 @@ main {
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
     margin-bottom: 30px;
+
 }
 
 .description {
@@ -209,7 +210,6 @@ main {
     position: absolute;
     top: 100px;
     left: 0;
-
 }
 
 .icons > h1 {
@@ -232,14 +232,98 @@ main {
 }
 
 /*home  end---------------------------------*/
-/*tab*/
-@media screen and (max-width: 768px) {
-    a {
-        font-size: 28px;
+
+
+/*laptop*/
+@media screen and (max-width: 1440px) {
+    .navbar > ul > li {
+        padding-right: 5em;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        transition: 0.2s ease-in-out;
+    }
+    .right-section {
+        background-size: contain;
     }
 
-    .description {
-        font: larger Roboto;
+    .item {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    .icon-container > h3 {
+        font: 18px roboto;
+    }
+    a {
+        font-size: 22px;
+    }
+    .description{
+        display: none;
+    }
+    .check-out{
+        font-size: 20px;
+    }
+    .icons{
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+    .footer-text{
+        font-size: 20px;
+
+    }
+}
+/*tab*/
+@media screen and (max-width: 994px) {
+    .navbar > ul > li {
+        padding-right: 3em;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        transition: 0.2s ease-in-out;
+    }
+    .right-section {
+        background-size: contain;
+    }
+    .footer-text{
+        font-size: 18px;
+    }
+    .item {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    .icon-container > h3 {
+        font: 18px roboto;
+    }
+    a {
+        font-size: 22px;
+    }
+    .description{
+        display: none;
+    }
+    .check-out{
+        font-size: 20px;
+    }
+    .icons{
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+}
+/*tab*/
+@media screen and (max-width: 768px) {
+    .navbar > ul > li {
+        padding-right: 0;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        transition: 0.2s ease-in-out;
+    }
+    a {
+        font-size: 26px;
+    }
+    .footer-text{
+        font-size: 18px;
+    }
+    .description{
+        display: none;
     }
 
     .right-section {
@@ -262,34 +346,7 @@ main {
     .item {
         font-size: 32px;
     }
-}
-
-/*laptop*/
-@media screen and (max-width: 1440px) {
-    .right-section {
-        background-size: contain;
+    .item-text{
+        flex-shrink: 0; /* Prevent the h1 element from shrinking */
     }
-
-    .item {
-        font-size: 32px;
-        margin-bottom: 15px;
-    }
-    .icon-container > h3 {
-        font: 18px roboto;
-    }
-    a {
-        font-size: 26px;
-    }
-    .description{
-        display: none;
-    }
-    .check-out{
-        font-size: 26px;
-    }
-    .icons{
-        position: absolute;
-        top: 100px;
-        left: 0;
-    }
-
 }

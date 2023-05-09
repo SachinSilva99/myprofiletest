@@ -303,6 +303,7 @@ main {
     color: #C5C6C7;
     font-size: xx-large;
     margin: 1em;
+    cursor: pointer;
 }
 
 /*projects  end---------------------------------*/
@@ -311,7 +312,6 @@ main {
 .contact-me {
     display: flex;
     flex-direction: row;
-    width: 100vw;
 }
 .contact-left{
     margin-top: 5%;
@@ -436,6 +436,9 @@ input[type="submit"]:hover {
         margin: 1em;
         align-self: end;
     }
+    .field{
+        margin-left: 3vw;
+    }
 }
 
 @media screen and (max-width: 1366px) {
@@ -497,6 +500,9 @@ input[type="submit"]:hover {
         font-size: x-large;
         margin: 1em;
         align-self: end;
+    }
+    .field{
+        margin-left: 3vw;
     }
 }
 
@@ -575,6 +581,9 @@ input[type="submit"]:hover {
         align-self: end;
         flex-shrink: 0; /* Prevent the h1 element from shrinking */
 
+    }
+    .field{
+        margin-left: 5vw;
     }
 
 }
@@ -760,6 +769,7 @@ input[type="submit"]:hover {
     .field{
         width: 80vw;
         font-size: x-large;
+        margin-left: 10vw;
     }
     .fields{
         display: flex;
@@ -831,6 +841,7 @@ input[type="submit"]:hover {
     .field{
         width: 80vw;
         font-size: x-large;
+        margin-left: 10vw;
     }
     .fields{
         display: flex;

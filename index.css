@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 
 h1 {
@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: #0b0c10;
+    font-family: "Roboto", serif;
 }
 
 body::-webkit-scrollbar {
@@ -306,6 +307,76 @@ main {
 
 /*projects  end---------------------------------*/
 
+/*contact me start--------------------------------------------------*/
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+.contact-left{
+    margin-top: 5%;
+    background-image: url('assets/images/img.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60vw;
+    align-content: center;
+}
+.contact-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+.contact-text{
+    font-size: xxx-large;
+    color: #45A29E;
+}
+.field, .submit{
+    display: block;
+}
+#message{
+    height: 10vh;
+}
+input::placeholder, #message::placeholder{
+    font-family: "Poppins", serif;
+    font-size: x-large;
+    color: #000000;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.field{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    width: 30vw;
+    height: 5vh;
+    background-color: #C5C6C7;
+    font-size: x-large;
+}
+input[type="submit"] {
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #0EC2B5;
+    color: #ffffff;
+    cursor: pointer;
+    width: 40%;
+    font-size: x-large;
+    align-self: end;
+}
+input[type="submit"]:hover {
+    background-color: #0c968c;
+}
+
+/*contact me end --------------------------------------------------*/
+
 
 /*laptop*/
 @media screen and (max-width: 1440px) {
@@ -542,6 +613,7 @@ main {
         font-size: 32px;
         margin-bottom: 15px;
     }
+
     .icon-container > h3 {
         font: 18px roboto;
     }
@@ -682,6 +754,23 @@ main {
     .project-topic, .project-des, .view-code, .live-code {
         font-size: large;
     }
+    .contact-left{
+        display: none;
+    }
+    .field{
+        width: 80vw;
+        font-size: x-large;
+    }
+    .fields{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+    input[type="submit"] {
+        align-self: end;
+    }
 }
 
 /*mobile*/
@@ -735,5 +824,22 @@ main {
 
     .footer-text {
         font-size: small;
+    }
+    .contact-left{
+        display: none;
+    }
+    .field{
+        width: 80vw;
+        font-size: x-large;
+    }
+    .fields{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+    input[type="submit"] {
+        align-self: end;
     }
 }

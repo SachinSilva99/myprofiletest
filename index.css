@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* {
-
-}
 
 h1 {
     color: #c5c6c7;
@@ -33,6 +30,7 @@ body::-webkit-scrollbar-thumb {
 
 /*nav start------------------------------------------------*/
 .navbar-section {
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
@@ -123,12 +121,13 @@ main {
     width: 50px;
     height: 50px;
     background-image: url("assets/icons/icons8-menu-50.png");
+
 }
 
 .footer {
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: #0b0c10;
     text-align: left;
     line-height: 50px;
     margin-top: auto;
@@ -192,13 +191,15 @@ main {
     color: #FFFFFF;
     background-color: #0EC2B5;
 }
-
+.item-text {
+    flex-shrink: 0;
+}
 .right-section {
     display: flex;
     width: 60vw;
     background-image: url("assets/images/img.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
@@ -235,6 +236,65 @@ main {
 }
 
 /*home  end---------------------------------*/
+/*projects  start---------------------------------*/
+.project-section{
+    display: flex;
+    flex-direction: column;
+}
+.head-topic{
+
+    font-size: xxx-large;
+    margin-top: 4%;
+    margin-left: 2%;
+    color: #45A29E;
+}
+.all-projects{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.project{
+    width: 23vw;
+    height: 65vh;
+    background-color: #0EC2B5;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    width: 100%;
+    height: 20vh;
+    background-image: url("assets/projects/restaurantmanagement.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.project-topic{
+    color: #1F2833;
+    font-size: xx-large;
+    margin: 1em;
+}
+.project-des{
+    color: #FFFFFF;
+    font-size: xx-large;
+    margin: 1em;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+
+}
+.view-code, .live-code{
+    color: #C5C6C7;
+    font-size: xx-large;
+    margin: 1em;
+}
+
+/*projects  end---------------------------------*/
 
 
 /*laptop*/
@@ -280,6 +340,78 @@ main {
     .footer-text {
         font-size: 20px;
     }
+    .project-topic{
+        font-size: x-large;
+    }
+    .project-des{
+        font-size: x-large;
+        margin: 1em;
+    }
+
+    .view-code, .live-code{
+        font-size: x-large;
+        margin: 1em;
+        align-self: end;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .navbar > ul > li {
+        padding-right: 5em;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        transition: 0.2s ease-in-out;
+    }
+
+    .right-section {
+        background-size: contain;
+    }
+
+    .item {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .icon-container > h3 {
+        font: 18px roboto;
+    }
+
+    a {
+        font-size: 22px;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .check-out {
+        font-size: 20px;
+    }
+
+    .icons {
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
+
+    .footer-text {
+        font-size: 20px;
+    }
+    .project-des{
+        font-size: x-large;
+        margin: 1em;
+    }
+    .footer-section{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 0;
+    }
+    .view-code, .live-code{
+        font-size: x-large;
+        margin: 1em;
+        align-self: end;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -289,7 +421,9 @@ main {
         padding-bottom: 20px;
         transition: 0.2s ease-in-out;
     }
-
+    .item-text {
+        flex-shrink: 0;
+    }
     .right-section {
         background-size: contain;
     }
@@ -317,7 +451,7 @@ main {
 
     .icons {
         position: absolute;
-        top: 50px;
+        top: 20px;
         left: 0;
     }
 
@@ -337,17 +471,43 @@ main {
         margin-right: 0;
         margin-left: 20px;
     }
+    .project-topic{
+        font-size: x-large;
+    }
+    .project-des{
+        font-size: x-large;
+        margin: 1em;
+    }
+
+    .view-code, .live-code{
+        font-size: x-large;
+        margin: 1em;
+        align-self: end;
+        flex-shrink: 0; /* Prevent the h1 element from shrinking */
+
+    }
+
 }
 
 /*tab*/
 @media screen and (max-width: 994px) {
+    .item-text {
+        flex-shrink: 0;
+    }
     .navbar > ul > li {
         padding-right: 3em;
         padding-left: 20px;
         padding-bottom: 20px;
         transition: 0.2s ease-in-out;
     }
+    .social > li > a > img {
+        width: 30px;
+    }
 
+    .social > li {
+        margin-right: 0;
+        margin-left: 20px;
+    }
     .right-section {
         background-size: contain;
     }
@@ -382,10 +542,19 @@ main {
         top: 100px;
         left: 0;
     }
+
 }
 
 /*tab*/
 @media screen and (max-width: 768px) {
+    .social > li > a > img {
+        width: 30px;
+    }
+
+    .social > li {
+        margin-right: 0;
+        margin-left: 100px;
+    }
     .navbar > ul {
         display: none;
     }
@@ -400,6 +569,17 @@ main {
 
     .description {
         display: none;
+    }
+    .social > li > a > img {
+        width: 30px;
+    }
+
+    .social > li {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .social{
+        margin-left: 40px;
     }
 
     .right-section {
@@ -451,6 +631,28 @@ main {
     .nav-links.active {
         display: flex;
     }
+
+    .all-projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+        grid-gap: 5px; /* Adjust the gap value as desired */
+    }
+    .project{
+        margin-left: 20px;
+        height: 40vh;
+        width: 45vw;
+    }
+    .img {
+        width: 100%;
+        height: 150px;
+        background-image: url('assets/projects/restaurantmanagement.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .project-topic, .project-des, .view-code, .live-code{
+        font-size: large;
+    }
 }
 
 /*mobile*/
@@ -466,7 +668,7 @@ main {
         height: 690px;
         background-image: url("assets/images/img.png");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
     }
 
@@ -481,5 +683,23 @@ main {
         font-size: 32px;
         line-height: 36px;
     }
+    .project{
+        margin-left: 20px;
+        height:35vh;
+        width: 45vw;
+    }
+    .img {
+        width: 100%;
+        height: 150px;
+        background-image: url('assets/projects/restaurantmanagement.png');
+        background-repeat: no-repeat;
+        background-size: cover;
 
+    }
+    .project-topic, .project-des, .view-code, .live-code{
+        font-size: small;
+    }
+    .footer-text{
+        font-size: small;
+    }
 }

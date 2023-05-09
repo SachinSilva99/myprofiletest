@@ -191,9 +191,11 @@ main {
     color: #FFFFFF;
     background-color: #0EC2B5;
 }
+
 .item-text {
     flex-shrink: 0;
 }
+
 .right-section {
     display: flex;
     width: 60vw;
@@ -237,18 +239,20 @@ main {
 
 /*home  end---------------------------------*/
 /*projects  start---------------------------------*/
-.project-section{
+.project-section {
     display: flex;
     flex-direction: column;
 }
-.head-topic{
+
+.head-topic {
 
     font-size: xxx-large;
     margin-top: 4%;
     margin-left: 2%;
     color: #45A29E;
 }
-.all-projects{
+
+.all-projects {
     display: flex;
     flex-direction: row;
     width: 100vw;
@@ -257,7 +261,8 @@ main {
     justify-content: center;
     gap: 10px;
 }
-.project{
+
+.project {
     width: 23vw;
     height: 65vh;
     background-color: #0EC2B5;
@@ -265,30 +270,35 @@ main {
     display: flex;
     flex-direction: column;
 }
-.img{
+
+.img {
     width: 100%;
     height: 20vh;
     background-image: url("assets/projects/restaurantmanagement.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.project-topic{
+
+.project-topic {
     color: #1F2833;
     font-size: xx-large;
     margin: 1em;
 }
-.project-des{
+
+.project-des {
     color: #FFFFFF;
     font-size: xx-large;
     margin: 1em;
 }
-.footer-section{
+
+.footer-section {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
 
 }
-.view-code, .live-code{
+
+.view-code, .live-code {
     color: #C5C6C7;
     font-size: xx-large;
     margin: 1em;
@@ -340,15 +350,17 @@ main {
     .footer-text {
         font-size: 20px;
     }
-    .project-topic{
+
+    .project-topic {
         font-size: x-large;
     }
-    .project-des{
+
+    .project-des {
         font-size: x-large;
         margin: 1em;
     }
 
-    .view-code, .live-code{
+    .view-code, .live-code {
         font-size: x-large;
         margin: 1em;
         align-self: end;
@@ -397,17 +409,20 @@ main {
     .footer-text {
         font-size: 20px;
     }
-    .project-des{
+
+    .project-des {
         font-size: x-large;
         margin: 1em;
     }
-    .footer-section{
+
+    .footer-section {
         display: flex;
         justify-content: space-between;
         position: relative;
         bottom: 0;
     }
-    .view-code, .live-code{
+
+    .view-code, .live-code {
         font-size: x-large;
         margin: 1em;
         align-self: end;
@@ -421,9 +436,11 @@ main {
         padding-bottom: 20px;
         transition: 0.2s ease-in-out;
     }
+
     .item-text {
         flex-shrink: 0;
     }
+
     .right-section {
         background-size: contain;
     }
@@ -471,15 +488,17 @@ main {
         margin-right: 0;
         margin-left: 20px;
     }
-    .project-topic{
+
+    .project-topic {
         font-size: x-large;
     }
-    .project-des{
+
+    .project-des {
         font-size: x-large;
         margin: 1em;
     }
 
-    .view-code, .live-code{
+    .view-code, .live-code {
         font-size: x-large;
         margin: 1em;
         align-self: end;
@@ -494,12 +513,14 @@ main {
     .item-text {
         flex-shrink: 0;
     }
+
     .navbar > ul > li {
         padding-right: 3em;
         padding-left: 20px;
         padding-bottom: 20px;
         transition: 0.2s ease-in-out;
     }
+
     .social > li > a > img {
         width: 30px;
     }
@@ -508,6 +529,7 @@ main {
         margin-right: 0;
         margin-left: 20px;
     }
+
     .right-section {
         background-size: contain;
     }
@@ -520,7 +542,6 @@ main {
         font-size: 32px;
         margin-bottom: 15px;
     }
-
     .icon-container > h3 {
         font: 18px roboto;
     }
@@ -547,6 +568,7 @@ main {
 
 /*tab*/
 @media screen and (max-width: 768px) {
+
     .social > li > a > img {
         width: 30px;
     }
@@ -555,6 +577,7 @@ main {
         margin-right: 0;
         margin-left: 100px;
     }
+
     .navbar > ul {
         display: none;
     }
@@ -570,6 +593,7 @@ main {
     .description {
         display: none;
     }
+
     .social > li > a > img {
         width: 30px;
     }
@@ -578,7 +602,8 @@ main {
         margin-right: 0;
         margin-left: 20px;
     }
-    .social{
+
+    .social {
         margin-left: 40px;
     }
 
@@ -637,11 +662,14 @@ main {
         grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
         grid-gap: 5px; /* Adjust the gap value as desired */
     }
-    .project{
-        margin-left: 20px;
-        height: 40vh;
+
+    .project {
+        border-radius: 10px;
+        margin-left: 8px;
+        height: 37vh;
         width: 45vw;
     }
+
     .img {
         width: 100%;
         height: 150px;
@@ -650,7 +678,8 @@ main {
         background-size: cover;
 
     }
-    .project-topic, .project-des, .view-code, .live-code{
+
+    .project-topic, .project-des, .view-code, .live-code {
         font-size: large;
     }
 }
@@ -683,11 +712,14 @@ main {
         font-size: 32px;
         line-height: 36px;
     }
-    .project{
-        margin-left: 20px;
-        height:35vh;
+
+    .project {
+        border-radius: 10px;
+        margin-left: 6px;
+        height: 33vh;
         width: 45vw;
     }
+
     .img {
         width: 100%;
         height: 150px;
@@ -696,10 +728,12 @@ main {
         background-size: cover;
 
     }
-    .project-topic, .project-des, .view-code, .live-code{
+
+    .project-topic, .project-des, .view-code, .live-code {
         font-size: small;
     }
-    .footer-text{
+
+    .footer-text {
         font-size: small;
     }
 }

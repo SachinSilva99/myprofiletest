@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
-
 h1 {
     color: #c5c6c7;
 }
@@ -183,15 +182,19 @@ main {
     padding-bottom: 10px;
 }
 
-.get-cv {
-    width: 200px;
-}
 
 .get-cv {
+    border: none;
+    width: 200px;
     border-radius: 20px;
     color: #FFFFFF;
     background-color: #0EC2B5;
 }
+
+.get-cv:hover {
+    background-color: #0c948a;
+}
+
 
 .item-text {
     flex-shrink: 0;
@@ -313,7 +316,8 @@ main {
     display: flex;
     flex-direction: row;
 }
-.contact-left{
+
+.contact-left {
     margin-top: 5%;
     background-image: url('assets/images/img.png');
     background-repeat: no-repeat;
@@ -321,35 +325,41 @@ main {
     width: 60vw;
     align-content: center;
 }
-.contact-right{
+
+.contact-right {
     flex: 1;
     display: flex;
     align-items: center;
 
     flex-direction: column;
 }
-.contact-text{
+
+.contact-text {
     font-size: xxx-large;
     color: #45A29E;
 }
-.field, .submit{
+
+.field, .submit {
     display: block;
 }
-#message{
+
+#message {
     height: 10vh;
 }
-input::placeholder, #message::placeholder{
+
+input::placeholder, #message::placeholder {
     font-family: "Poppins", serif;
     font-size: x-large;
     color: #000000;
 }
 
-.fields{
+.fields {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.field{
+
+.field {
     border: none;
     border-radius: 20px;
     padding: 10px;
@@ -359,6 +369,7 @@ input::placeholder, #message::placeholder{
     background-color: #C5C6C7;
     font-size: x-large;
 }
+
 input[type="submit"] {
     margin-top: 20px;
     border: none;
@@ -371,11 +382,100 @@ input[type="submit"] {
     font-size: x-large;
     align-self: end;
 }
+
 input[type="submit"]:hover {
     background-color: #0c968c;
 }
 
 /*contact me end --------------------------------------------------*/
+/*skills start --------------------------------------------------*/
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.skill-bar-text {
+    color: white;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-bar {
+    width: 200px;
+    height: 20px;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+.item-skill {
+    display: flex;
+    flex-direction: row;
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skill-bar {
+    width: 100%;
+}
+
+.progress-label {
+    margin-left: 10px;
+}
+
+
+/* For Chrome or Safari */
+progress::-webkit-progress-bar {
+    background-color: #1F2833;
+}
+
+progress::-webkit-progress-value {
+    background-color: #66FCF1 !important;
+}
+
+.left-skills, .right-skills {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 69vh;
+    gap: 20px;
+    padding: 5vw;
+}
+
+.left-skills {
+    padding-top: 10vw;
+}
+
+.progress-label {
+    color: #FFFFFF;
+}
+
+/* For Firefox */
+progress {
+    background-color: #eee;
+}
+
+progress::-moz-progress-bar {
+    background-color: #039603 !important;
+}
+
+/* For IE10 */
+progress {
+    background-color: #eee;
+}
+
+progress {
+    background-color: #039603;
+}
+
+/*skills end --------------------------------------------------*/
 
 
 /*laptop*/
@@ -436,7 +536,8 @@ input[type="submit"]:hover {
         margin: 1em;
         align-self: end;
     }
-    .field{
+
+    .field {
         margin-left: 3vw;
     }
 }
@@ -501,7 +602,8 @@ input[type="submit"]:hover {
         margin: 1em;
         align-self: end;
     }
-    .field{
+
+    .field {
         margin-left: 3vw;
     }
 }
@@ -582,7 +684,8 @@ input[type="submit"]:hover {
         flex-shrink: 0; /* Prevent the h1 element from shrinking */
 
     }
-    .field{
+
+    .field {
         margin-left: 5vw;
     }
 
@@ -763,23 +866,37 @@ input[type="submit"]:hover {
     .project-topic, .project-des, .view-code, .live-code {
         font-size: large;
     }
-    .contact-left{
+
+    .contact-left {
         display: none;
     }
-    .field{
+
+    .field {
         width: 80vw;
         font-size: x-large;
         margin-left: 10vw;
     }
-    .fields{
+
+    .fields {
         display: flex;
         flex-direction: column;
         gap: 15px;
         width: 100%;
         align-items: center;
     }
+
     input[type="submit"] {
         align-self: end;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .item {
+        font-size: x-large;
+    }
+
+    .get-cv {
+        width: 21vh;
     }
 }
 
@@ -835,22 +952,42 @@ input[type="submit"]:hover {
     .footer-text {
         font-size: small;
     }
-    .contact-left{
+
+    .contact-left {
         display: none;
     }
-    .field{
+
+    .field {
         width: 80vw;
         font-size: x-large;
         margin-left: 10vw;
     }
-    .fields{
+
+    .fields {
         display: flex;
         flex-direction: column;
         gap: 15px;
         width: 100%;
         align-items: center;
     }
+
     input[type="submit"] {
         align-self: end;
     }
+    .skills-section{
+        flex-direction: column;
+    }
+    .left-skills{
+        margin-top: 0;
+    }
+    .left-skills, .right-skills{
+        width: 100vw;
+        height: 100%;
+        gap: 5px;
+
+    }
+    .progress-bar-wrapper{
+        width: 90%;
+    }
+
 }

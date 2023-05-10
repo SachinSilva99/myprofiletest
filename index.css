@@ -449,8 +449,8 @@ progress::-webkit-progress-value {
     padding: 5vw;
 }
 
-.left-skills {
-    padding-top: 10vw;
+.right-skills {
+    padding-top: 0;
 }
 
 .progress-label {
@@ -606,6 +606,15 @@ progress {
     .field {
         margin-left: 3vw;
     }
+    #skills-head{
+        position: absolute;
+    }
+    .left-skills{
+        margin-top: 6vw;
+    }
+    .right-skills{
+        margin-top: 2vw;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -687,6 +696,12 @@ progress {
 
     .field {
         margin-left: 5vw;
+    }
+    .left-skills{
+        margin-top: 12vw;
+    }
+    .right-skills{
+        margin-top: 8vw;
     }
 
 }
@@ -888,6 +903,7 @@ progress {
     input[type="submit"] {
         align-self: end;
     }
+
 }
 
 @media screen and (max-width: 766px) {
@@ -899,7 +915,12 @@ progress {
         width: 21vh;
     }
 }
-
+@media screen and (max-width: 540px){
+    .skills-section{
+        display: flex;
+        flex-direction: column;
+    }
+}
 /*mobile*/
 @media screen and (max-width: 425px) {
     .home {
@@ -989,5 +1010,12 @@ progress {
     .progress-bar-wrapper{
         width: 90%;
     }
-
+    #skills-head{
+        position: static;
+    }
+}
+@media screen and (max-width: 321px) {
+    .footer-text{
+        font-size: x-small;
+    }
 }

@@ -277,7 +277,7 @@ main {
 
 .img {
     width: 100%;
-    height: 20vh;
+    height: 20vw;
     background-image: url("assets/projects/restaurantmanagement.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -666,6 +666,7 @@ progress {
 }
 
 @media screen and (max-width: 1024px) {
+
     .navbar > ul > li {
         padding-right: 3em;
         padding-left: 20px;
@@ -726,16 +727,14 @@ progress {
     }
 
     .project-topic {
-        font-size: x-large;
     }
 
     .project-des {
-        font-size: x-large;
+
         margin: 1em;
     }
 
     .view-code, .live-code {
-        font-size: x-large;
         margin: 1em;
         align-self: end;
         flex-shrink: 0; /* Prevent the h1 element from shrinking */
@@ -751,11 +750,17 @@ progress {
     .right-skills{
         margin-top: 8vw;
     }
+    .footer-section, .project-des, .project-topic, .view-code, .live-code{
+        font-size: medium;
+    }
 
 }
 
 /*tab*/
 @media screen and (max-width: 994px) {
+    .footer-section, .project-des, .project-topic, .view-code, .live-code{
+        font-size: small;
+    }
     .item-text {
         flex-shrink: 0;
     }
@@ -962,11 +967,17 @@ progress {
     .get-cv {
         width: 21vh;
     }
+    .footer-section, .project-des, .project-topic, .view-code, .live-code{
+        font-size: small;
+    }
 }
 @media screen and (max-width: 540px){
     .skills-section{
         display: flex;
         flex-direction: column;
+    }
+    .footer-section, .project-des, .project-topic, .view-code, .live-code{
+        font-size: small;
     }
 }
 /*mobile*/
@@ -1007,7 +1018,7 @@ progress {
 
     .img {
         width: 100%;
-        height: 150px;
+        height: 17vw;
         background-image: url('assets/projects/restaurantmanagement.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -1062,6 +1073,9 @@ progress {
     }
     #skills-head{
         position: static;
+    }
+    .footer-section{
+        display: none;
     }
 }
 @media screen and (max-width: 321px) {

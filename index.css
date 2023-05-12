@@ -979,6 +979,13 @@ progress {
     .footer-section, .project-des, .project-topic, .view-code, .live-code{
         font-size: small;
     }
+    .gallery-pics{
+        flex-direction: column;
+    }
+    .gallery-item{
+        width: 80vw;
+        height: 20vh;
+    }
 }
 /*mobile*/
 @media screen and (max-width: 425px) {
@@ -1022,7 +1029,7 @@ progress {
         background-image: url('assets/projects/restaurantmanagement.png');
         background-repeat: no-repeat;
         background-size: cover;
-
+        flex: 1;
     }
 
     .project-topic, .project-des, .view-code, .live-code {
@@ -1077,6 +1084,7 @@ progress {
     .footer-section{
         display: none;
     }
+
 }
 @media screen and (max-width: 321px) {
     .footer-text{

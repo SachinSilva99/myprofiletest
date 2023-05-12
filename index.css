@@ -308,7 +308,12 @@ main {
     margin: 1em;
     cursor: pointer;
 }
-
+.project-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 /*projects  end---------------------------------*/
 
 /*contact me start--------------------------------------------------*/
@@ -388,6 +393,8 @@ input[type="submit"]:hover {
 }
 
 /*contact me end --------------------------------------------------*/
+
+
 /*skills start --------------------------------------------------*/
 .skills {
     display: flex;
@@ -476,6 +483,47 @@ progress {
 }
 
 /*skills end --------------------------------------------------*/
+
+
+/*gallery start --------------------------------------------------*/
+.gallery{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+.gallery-pics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+}
+.gallery-item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vw;
+    height: 70vh;
+    border-radius: 20px;
+}
+#gallery-head-topic{
+    align-self: start;
+}
+
+.gallery-item:nth-child(1){
+    background-image: url("assets/gallery/Rectangle 21.png");
+}
+.gallery-item:nth-child(2){
+    background-image: url("assets/gallery/Rectangle 22.png");
+}
+.gallery-item:nth-child(3){
+    background-image: url("assets/gallery/Rectangle 23.png");
+}
+.gallery-buttons{
+    margin-top: 20px;
+}
+/*gallery end --------------------------------------------------*/
 
 
 /*laptop*/
@@ -1005,7 +1053,9 @@ progress {
         width: 100vw;
         height: 100%;
         gap: 5px;
-
+    }
+    .right-skills{
+        margin-top: 0;
     }
     .progress-bar-wrapper{
         width: 90%;
